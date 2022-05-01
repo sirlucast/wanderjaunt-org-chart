@@ -11,23 +11,8 @@ Retrieve a list of Employees from the /employee endpoint and display them as a n
   <li> When a manager has more than one report, sort reports alphabetically by last name </li>
 </ol>
 
-### Example endpoint response
+employee list API [here](https://gist.githubusercontent.com/chancock09/6d2a5a4436dcd488b8287f3e3e4fc73d/raw/fa47d64c6d5fc860fabd3033a1a4e3c59336324e/employees.json).
 
-```javascript
-[
-  { "name": "Barrett Glasauer", "id": 1, "title": "CTO", "manager_id": 2 },
-  { "name": "Michael Chen", "id": 2, "title": "CEO", "manager_id": null },
-  { "name": "Julian Early", "id": 3, "title": "Engineer", "manager_id": 8 },
-  { "name": "Andres Green", "id": 4, "title": "COO", "manager_id": 2 }, 
-  { "name": "Emily Pun", "id": 5, "title": "Designer", "manager_id": 32 },
-  { "name": "Michael Lorton", "id": 6, "title": "Engineer", "manager_id": 8 },
-  { "name": "Chris Hancock", "id": 8, "title": "Engineering Manager", "manager_id": 1 },
-  { "name": "Shrutika Dasgupta", "id": 22, "title": "Engineer", "manager_id": 8 },
-  { "name": "Ryan Miller", "id": 30, "title": "Head of Operations", "manager_id": 4 },
-  { "name": "Natasha Prats", "id": 32, "title": "Head of Product", "manager_id": 2 },
-  { "name": "Mauricio Aizaga", "id": 33, "title": "Engineer", "manager_id": 8 }
-]
-```
 
 ### Example expected output
 
