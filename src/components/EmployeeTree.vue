@@ -1,15 +1,15 @@
 <template>
   <li>
-    {{ node.name }}
+    <span>{{ node.title }}: {{node.name}}</span>
   </li>
   <ul v-if="hasChildren">
-    <li><TreeNode v-for="child in node.children" :key="child.id" :node="child" /></li>
+    <li><EmployeeTree v-for="child in node.children" :key="child.id" :node="child" /></li>
   </ul>
 </template>
 
 <script>
 export default {
-  name: "TreeNode",
+  name: "EmployeeTree",
   props: {
     node: {
       type: Object,

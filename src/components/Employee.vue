@@ -4,8 +4,7 @@
 
     <section v-if="error">
       <p>
-        Lo sentimos, no es posible obtener la información en este momento, por
-        favor intente nuevamente mas tarde
+        There is a problem getting information
       </p>
     </section>
 
@@ -14,7 +13,7 @@
 
       <div>
            <ul>
-               <TreeNode v-for="item in employees" :key="item.id" :node="item" />
+               <EmployeeTree v-for="item in employees" :key="item.id" :node="item" data-test="employees"/>
            </ul>
       </div>
     </section>
@@ -24,12 +23,12 @@
 
 <script>
 import axios from "axios";
-import TreeNode from "@/components/TreeNode.vue"
+import EmployeeTree from "@/components/EmployeeTree.vue"
 
 export default {
   name: "EmployeeList",
   components: {
-      TreeNode
+      EmployeeTree
   },
   data() {
     return {
